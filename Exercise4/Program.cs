@@ -81,7 +81,14 @@ namespace Exercise_4
                         }
                         s.pop();
                         break;
-                    
+                    case '3':
+                        s.display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\n Invalid Choice");
+                        break;
                 }
             }
         }
