@@ -22,5 +22,12 @@ namespace Exercise_4
         {
             top = null;
         }
+
+        bool empty()
+        {
+            return top == null;
+        }
+            
+
     }
 }
