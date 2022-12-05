@@ -32,6 +32,16 @@ namespace Exercise_4
                 return (false);
         }
 
+        public void push(int element)
+        {
+            node fresh;
+            fresh = new node(element, null);
+
+            fresh.next = top;
+            top = fresh;
+            Console.WriteLine("\n" + element + "pushed");
+        }
+
         public void pop()
         {
             Console.WriteLine("\n the poped elements is: " + top.info);
@@ -71,7 +81,7 @@ namespace Exercise_4
                     case '1':
                         Console.Write("\nEnter a number: ");
                         int num = Convert.ToInt32(Console.ReadLine());
-                        s.push(num);
+                        s.(num);
                         break;
                     case '2':
                         if (s.empty())
