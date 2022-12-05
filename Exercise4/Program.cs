@@ -66,7 +66,23 @@ namespace Exercise_4
                 Console.WriteLine("\nEnter Your Choice: ");
                 string input = Console.ReadLine();
                 char ch = Convert.ToChar(input == "" ? "0" : input);
-                
+                switch (ch)
+                {
+                    case '1':
+                        Console.Write("\nEnter a number: ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.push(num);
+                        break;
+                    case '2':
+                        if (s.empty())
+                        {
+                            Console.WriteLine("\n Stack empty");
+                            break;
+                        }
+                        s.pop();
+                        break;
+                    
+                }
             }
         }
     }
