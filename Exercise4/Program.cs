@@ -16,5 +16,8 @@ namespace Exercise_4
         }
     }
 
-    
+    class stack
+    {
+       
+    }
 }
